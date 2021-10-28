@@ -14,3 +14,10 @@ CREATE TABLE user(
     u_email char(25) not null,           -- char or #?
     u_nationkey decimal(3,0) not null
 );
+CREATE TABLE artist(
+    a_artistkey decimal(3,0) not null, 
+    a_artistName char(25) not null, 
+    a_passcode decimal(3,0) not null,
+    a_email char(25) not null,           -- char or #?
+    a_nationkey decimal(3,0) not null
+);
