@@ -21,3 +21,9 @@ CREATE TABLE artist(
     a_email char(25) not null,           -- char or #?
     a_nationkey decimal(3,0) not null
 );
+CREATE TABLE music (
+m_songName char(25) not null,
+m_albumName char(25) not null,
+m_artistName char(25) not null,
+m_duration decimal(3,0) not null
+);
