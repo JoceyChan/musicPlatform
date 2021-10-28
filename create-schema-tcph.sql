@@ -22,16 +22,16 @@ CREATE TABLE artist(
     a_nationkey decimal(3,0) not null
 );
 CREATE TABLE music (
-m_songName char(25) not null,
-m_albumName char(25) not null,
-m_artistName char(25) not null,
-m_duration decimal(3,0) not null
+    m_songName char(25) not null,
+    m_albumName char(25) not null,
+    m_artistName char(25) not null,
+    m_duration decimal(3,0) not null
 );
 CREATE TABLE playlist (
-p_playlistName char(25) not null,
-p_playlistKey decimal(3, 0) not null, 
-p_songName char(25) not null, 
-p_artistName char(25) not null
+    p_playlistName char(25) not null,
+    p_playlistKey decimal(3, 0) not null, 
+    p_songName char(25) not null, 
+    p_artistName char(25) not null
 );
 CREATE TABLE sharing(
     s_profileKey decimal (3,0) not null, 
