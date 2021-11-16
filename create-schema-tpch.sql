@@ -55,6 +55,7 @@ SELECT "2----------";
 .headers on
 DELETE FROM region;
 DELETE FROM nation;
+DELETE FROM user;
 DELETE FROM music;
 
 INSERT INTO region VALUES(01, 'AMERICA'); 
@@ -71,6 +72,23 @@ INSERT INTO nation VALUES(06, 'SAUDI ARABIA', 03);
 INSERT INTO nation VALUES(07, 'IRAQ', 03);
 INSERT INTO nation VALUES(08, 'INDIA', 02);
 INSERT INTO nation VALUES(09, 'TAIWAN', 02);
+
+INSERT INTO user VALUES(001, 'duyducdo', 8996, 'iduydo@gmail.com', 01);
+INSERT INTO user VALUES(002, 'experiment0_625', 4462, 'bavila24@ucmerced.edu', 01);
+INSERT INTO user VALUES(003, 'sreeda007', 3299, 'vemuri.sreeda@gmail.com', 01);
+INSERT INTO user VALUES(004, 'butimarnold', 5693, 'akhampaseut@ucmerced.edu', 02);
+INSERT INTO user VALUES(005, 'Ishpatel77', 7723, 'ishpatel77@gmail.com', 08);
+INSERT INTO user VALUES(006, 'iamsandyh', 9346, 'shernandezgonzalez@ucmerced.edu', 02);
+INSERT INTO user VALUES(007, 'jjohnson', 9876, 'inkfirejj@gmail.com', 04);
+INSERT INTO user VALUES(008, 'lorenzo.scaturchio', 5532, 'lorenzosca7@gmail.com', 04);
+INSERT INTO user VALUES(009, 'hvillasin', 2788, 'hvillasin@ucmerced.edu', 04);
+INSERT INTO user VALUES(010, 'jaqui.sm', 5572, 'jaqui.sm5@gmail.com', 03);
+INSERT INTO user VALUES(011, 'zbai6', 6694, 'zbai6@ucmerced.edu', 09);
+INSERT INTO user VALUES(012, 'Am_santi', 7625, 'svazquezgarcia@ucmerced.edu', 02);
+INSERT INTO user VALUES(013, '_sarahtonin_._', 6633, 'sarahacuna12@gmail.com', 08);
+INSERT INTO user VALUES(014, 'Carmen_bee22' , 7364, 'cbribiesca22@gmail.com', 06);
+INSERT INTO user VALUES(015, 'Mynamesjustice_', 3578, 'jdhogan0@gmail.com', 07);
+INSERT INTO user VALUES(016, 'destineemarian', 2527, 'destineemarian@gmail.com', 05);
 
 INSERT INTO music VALUES ('May I Ask', 'May I Ask', 'Luke Chiang', '3:51');
 INSERT INTO music VALUES ('4EVER', '4EVER', 'Clario', '2:40');
