@@ -49,16 +49,16 @@ VALUES
 -- 6
 UPDATE artist 
 SET a_email = 'BFaiyaz@gmail.com', a_passcode = 9043
-WHERE a_artistkey = 012
+WHERE a_artistkey = 012;
 
 -- 7 
 DELETE FROM music 
-WHERE m_songName = 'Turning Page' 
+WHERE m_songName = 'Turning Page'; 
 
 -- 8 
 UPDATE playlist 
 SET p_songName = 'May I Ask, Easy', p_artistName = 'Luke Chiang, Mac Ayres'
-WHERE p_playlistName= 'Goodsong' 
+WHERE p_playlistName= 'Goodsong'; 
 
 -- 9
 DELETE from user
@@ -73,6 +73,4 @@ WHERE s_profileKey = 10;
 UPDATE music 
 SET m_albumName = ' '
 WHERE m_albumName = m_songName;
-
-;
 
