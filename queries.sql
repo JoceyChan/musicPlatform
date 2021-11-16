@@ -67,7 +67,7 @@ WHERE u_nationkey BETWEEN 02 AND 05;
 -- 10 
 UPDATE sharing 
 SET s_playlistName = 'rainydays' 
-WHERE s_profileKey = 10
+WHERE s_profileKey = 10;
 
 
 
