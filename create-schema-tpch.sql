@@ -69,6 +69,7 @@ DELETE FROM user;
 DELETE FROM artist;
 DELETE FROM music;
 DELETE FROM playlist;
+DELETE FROM sharing;
 
 INSERT INTO region VALUES(01, 'AMERICA'); 
 INSERT INTO region VALUES(02, 'ASIA'); 
@@ -145,7 +146,26 @@ INSERT INTO playlist VALUES('vibin', 008, 'ILYSB Thick and Thin', 'LANY');
 INSERT INTO playlist VALUES('Indie/Alternative', 009, 'The Scientist A Head Full of Dreams', 'Coldplay');
 INSERT INTO playlist VALUES('Music', 010, 'Falling Down Rain.strm', 'Shiloh altitude');
 
-
+INSERT INTO sharing VALUES(01, 'Goodsong', 'May I Ask', 'May I ask'); 
+INSERT INTO sharing VALUES(01, 'Goodsong', 'Easy', 'Drive Slow');
+INSERT INTO sharing VALUES(02, 'Bedroompop', '4EVER', '4EVER'); 
+INSERT INTO sharing VALUES(02, 'Bedroom pop', 'Little by Little', 'The Marias');
+INSERT INTO sharing VALUES(03, 'K-popcorn', 'Mic Drop', 'Love Yourself');
+INSERT INTO sharing VALUES(03,'K-popcorn', 'Pop/stars', 'Pop/stars');
+INSERT INTO sharing VALUES(04, 'SomusomU', 'Blue Hour', 'Blue Hour');
+INSERT INTO sharing VALUES(04, 'SomusomU', 'Kazino' , 'Kazino');
+INSERT INTO sharing VALUES(05, 'Car Ride', 'Saved', 'American Teen');
+INSERT INTO sharing VALUES(05, 'Car Ride', 'Shot Down', 'American Teen'); 
+INSERT INTO sharing VALUES(06, 'Issa Bop', 'Die for You', 'Starboy'); 
+INSERT INTO sharing VALUES(06, 'Issa Bop', 'Boy', 'Voicenotes');
+INSERT INTO sharing VALUES(07, 'Sinagable', 'Sanctuary', 'Nectar');
+INSERT INTO sharing VALUES(07, 'Sinagable', 'Sacramental', 'Sacramental'); 
+INSERT INTO sharing VALUES(08, 'vibin', 'ILYSB', 'Make Out'); 
+INSERT INTO sharing VALUES(08, 'vibin', 'Thick and Thin', 'Malibu Nights');
+INSERT INTO sharing VALUES(09, 'Indie/Alternative', 'The Scientist', 'A Rush of Blood to the Head');
+INSERT INTO sharing VALUES(09, 'Indie/Alternative',  'A Head Full of Dreams',  'A Head Full of Dreams'); 
+INSERT INTO sharing VALUES(10, 'Music', 'Falling Down', 'Falling Down'); 
+INSERT INTO sharing VALUES(10, 'Music', 'Rain.strm', 'Rain.strm');
 
 ;
 .headers off
