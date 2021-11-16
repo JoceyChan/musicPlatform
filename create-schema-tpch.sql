@@ -53,7 +53,14 @@ CREATE TABLE profile(
 
 SELECT "2----------";
 .headers on
+DELETE FROM region;
 DELETE FROM music;
+
+INSERT INTO region VALUES(01, 'AMERICA'); 
+INSERT INTO region VALUES(02, 'ASIA'); 
+INSERT INTO region VALUES(03, 'MIDDLE EAST'); 
+INSERT INTO region VALUES(04, 'EUROPE'); 
+
 
 INSERT INTO music VALUES ('May I Ask', 'May I Ask', 'Luke Chiang', '3:51');
 INSERT INTO music VALUES ('4EVER', '4EVER', 'Clario', '2:40');
