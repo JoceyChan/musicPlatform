@@ -69,10 +69,10 @@ UPDATE sharing
 SET s_playlistName = 'rainydays' 
 WHERE s_profileKey = 10;
 
-
-
-
-
+-- 11
+UPDATE music 
+SET m_albumName = ' '
+WHERE m_albumName = m_songName;
 
 ;
 
