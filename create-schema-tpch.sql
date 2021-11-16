@@ -48,6 +48,17 @@ CREATE TABLE profile(
     pr_artistKey decimal (3,0) not null, 
     pr_nationkey decimal (3,0) not null
 );
+CREATE TABLE artistProfile(
+    apr_profileKey decimal (2,0) not null, 
+    apr_artistKey decimal (3,0) not null, 
+    apr_nationkey decimal (3,0) not null
+);
+
+CREATE TABLE userProfile(
+    upr_profileKey decimal (2,0) not null, 
+    upr_userKey decimal (3,0) not null, 
+    upr_nationkey decimal (3,0) not null
+);
 ;
 .headers off
 
