@@ -103,8 +103,7 @@ VALUES (016, 'Olivia Rodrigo' , 0294, 'ORodrigo@gmail.com', 01),
 (029, 'Kevin Kaarl', 2931, 'KevinKaarl@gmail.com', 01),
 (030, 'Verzache' , 5739, 'Verzache@gmail.com', 04);
 
--- 15
-
+-- 14
 DELETE FROM music 
 WHERE m_duration >= '5:00' OR 
 m_artistName IN 
