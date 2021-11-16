@@ -1,3 +1,56 @@
 -- 1
 INSERT INTO music(m_songName, m_albumName, m_artistName, m_duration)
 VALUES('happier', 'SOUR', 'Olivia Rodrigo', '2:55');
+
+-- 2 
+INSERT INTO user(u_userkey, u_userName, u_passcode, u_email, u_nationkey)
+VALUES 
+(017, 'christBeanie', 1235, 'christineBeanie@gmail.com', 01),
+(018, 'jocey chan', 9429, 'joceychan331718@gmail.com', 01);
+
+-- 3
+UPDATE user
+SET u_userName = 'christineBeanie', u_passcode = 1230
+WHERE u_userkey = 017;
+
+-- 4 
+INSERT INTO userProfile(upr_profileKey, upr_userKey, upr_nationkey)
+VALUES 
+(21, 017, 01),
+(05, 018, 01);
+
+-- 5
+INSERT INTO music(m_songName, m_albumName, m_artistName, m_duration)
+VALUES
+('jealousy, jealousy', 'SOUR', 'Olivia Rodrigo', '2:53'),
+('Kiwi', 'Harry Styles', 'Harry Styles', '2:56'),
+('Fantasma', 'Garden of Lucid', 'Ambar Lucid', '3:34'),
+('Linda', ' ', 'Tokischa & Rosalia', '2:53'),
+('Ribs', 'Pure Heroine', 'Lorde', '4:18'),
+('Break It Off', 'to hell with it', 'PinkPantheress', '1:35'),
+('Pain', 'to hell with it', 'PinkPantheress', '1:39'),
+('Attracted To You', 'to hell with it', 'PinkPantheress', '1:08'),
+('Coaster', 'American Teen', 'Khalid', '3:19'),
+('Another Sad Love Song', 'American Teen', 'Khalid', '4:04'),
+('Bluffin', 'Free Spirit', 'Khalid', '3:19'),
+('Self', 'Free Spirit', 'Khalid', '3:49'),
+('Keep the Family Close', 'Views', 'Drake', '5:29'),
+('Bohemian Rhapsody', 'Greatest Hits', 'Queen', '5:55'),
+('You Do not Fool me', 'Greatest Hits', 'Queen', '5:22'),
+('La Noche De Anoche', 'El Ultimo Tour Del Mundo', 'Bad Bunny & Rosalia', '3:23'),
+('Stole the Show', 'Cloud Nine', 'Kygo', '3:43'),
+('Malamente', 'El Mal Querer', 'Rosalia', '2:30'),
+('Faded', 'Different World', 'Alan Walker', '3:32'),
+('Colapso', 'Hasta el Fin del Mundo', 'Kevin Kaarl', '3:55'),
+('Think About It', 'My Head is a Moshpit', 'Verzache', '2:22'),
+('Crash My Car', 'Dreamland', 'COIN', '3:08'),
+('Save Your Tears', 'After Hours', 'The Weeknd', '3:36');
+
+
+
+
+
+
+
+;
+
