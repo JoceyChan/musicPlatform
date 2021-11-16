@@ -1,3 +1,7 @@
 -- 1
 INSERT INTO music(m_songName, m_albumName, m_artistName, m_duration)
 VALUES('happier', 'SOUR', 'Olivia Rodrigo', '2:55');
+
+-- 2 
+INSERT INTO user(u_userkey, u_userName, u_passcode, u_email, u_nationkey)
+VALUES(017, 'christBeanie', 1235, 'christineBeanie@gmail.com', 01);
