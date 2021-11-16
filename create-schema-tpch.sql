@@ -39,7 +39,7 @@ CREATE TABLE playlist (
 CREATE TABLE sharing(
     s_profileKey decimal (3,0) not null, 
     s_playlistName char(25) not null ,
-    a_albumName char(25) not null, 
+    s_albumName char(25) not null, 
     s_songName char(25) not null
 );
 CREATE TABLE profile(
