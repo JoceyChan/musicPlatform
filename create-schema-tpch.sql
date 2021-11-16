@@ -25,7 +25,7 @@ CREATE TABLE music (
     m_songName char(25) not null,
     m_albumName char(25) not null,
     m_artistName char(25) not null,
-    m_duration decimal(3,0) not null
+    m_duration char(25) not null
 );
 CREATE TABLE playlist (
     p_playlistName char(25) not null,
