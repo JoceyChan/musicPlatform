@@ -86,4 +86,15 @@ INNER JOIN nation
 ON nation.n_nationkey = a_nationkey
 WHERE n_name != 'UNITED STATES');
 
+-- 14
 
+DELETE FROM music 
+WHERE m_duration >= '5:00' OR 
+m_artistName IN 
+(SELECT m_artistName
+FROM music
+INNER JOIN artist
+ON artist.a_artistName = music.m_artistName 
+INNER JOIN nation
+ON nation.n_nationkey = a_nationkey
+WHERE n_name != 'UNITED STATES');
