@@ -58,6 +58,7 @@ DELETE FROM nation;
 DELETE FROM user;
 DELETE FROM artist;
 DELETE FROM music;
+DELETE FROM playlist;
 
 INSERT INTO region VALUES(01, 'AMERICA'); 
 INSERT INTO region VALUES(02, 'ASIA'); 
@@ -123,6 +124,16 @@ INSERT INTO music VALUES('True Love', 'American Love Call', 'Durand Jones and th
 INSERT INTO music VALUES('Turning Page', 'Turning Page', 'Sleeping at Last', '4:16');
 INSERT INTO music VALUES('SAD GIRLZ LUV MONEY remix', 'SAD GIRLZ LUV MONEY remix', 'Amaarae ft. Kali Uchis', '3:25'); 
 
+INSERT INTO playlist VALUES('Goodsong', 001, 'May I Ask Easy', 'Luke Chiang Mac Ayres'); 
+INSERT INTO playlist VALUES('Bedroom pop', 002, '4EVER Little by Little', 'Clario The Marias');
+INSERT INTO playlist VALUES('K-popcorn', 003, 'Mic Drop Pop/stars', 'BTS k/da');
+INSERT INTO playlist VALUES('SomusomU', 004, 'Blue Hour Kazino', 'TXT BIBI');
+INSERT INTO playlist VALUES('Car Ride', 005, 'Saved Shot Down', 'Khalid'); 
+INSERT INTO playlist VALUES('Issa bop', 006, 'Die for you Boy', 'The Weeknd Charlie Puth');
+INSERT INTO playlist VALUES('Singable', 007, 'Sanctuary Sacramental', 'Joji Kiba of Akiba');
+INSERT INTO playlist VALUES('vibin', 008, 'ILYSB Thick and Thin', 'LANY');
+INSERT INTO playlist VALUES('Indie/Alternative', 009, 'The Scientist A Head Full of Dreams', 'Coldplay');
+INSERT INTO playlist VALUES('Music', 010, 'Falling Down Rain.strm', 'Shiloh altitude');
 
 ;
 .headers off
