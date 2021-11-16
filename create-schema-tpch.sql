@@ -42,12 +42,6 @@ CREATE TABLE sharing(
     s_albumName char(25) not null, 
     s_songName char(25) not null
 );
-CREATE TABLE profile(
-    pr_profileKey decimal (3,0) not null, 
-    pr_userKey decimal (3,0) not null, 
-    pr_artistKey decimal (3,0) not null, 
-    pr_nationkey decimal (3,0) not null
-);
 CREATE TABLE artistProfile(
     apr_profileKey decimal (2,0) not null, 
     apr_artistKey decimal (3,0) not null, 
