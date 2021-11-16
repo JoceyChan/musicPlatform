@@ -53,7 +53,6 @@ CREATE TABLE artistProfile(
     apr_artistKey decimal (3,0) not null, 
     apr_nationkey decimal (3,0) not null
 );
-
 CREATE TABLE userProfile(
     upr_profileKey decimal (2,0) not null, 
     upr_userKey decimal (3,0) not null, 
