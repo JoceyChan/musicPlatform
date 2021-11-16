@@ -14,3 +14,7 @@ SET u_userName = 'christineBeanie', u_passcode = 1230
 WHERE u_userkey = 017;
 
 -- 4 
+INSERT INTO userProfile(upr_profileKey, upr_userKey, upr_nationkey)
+VALUES 
+(21, 017, 01),
+(05, 018, 01);
