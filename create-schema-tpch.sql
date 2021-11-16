@@ -56,6 +56,7 @@ SELECT "2----------";
 DELETE FROM region;
 DELETE FROM nation;
 DELETE FROM user;
+DELETE FROM artist;
 DELETE FROM music;
 
 INSERT INTO region VALUES(01, 'AMERICA'); 
@@ -89,6 +90,22 @@ INSERT INTO user VALUES(013, '_sarahtonin_._', 6633, 'sarahacuna12@gmail.com', 0
 INSERT INTO user VALUES(014, 'Carmen_bee22' , 7364, 'cbribiesca22@gmail.com', 06);
 INSERT INTO user VALUES(015, 'Mynamesjustice_', 3578, 'jdhogan0@gmail.com', 07);
 INSERT INTO user VALUES(016, 'destineemarian', 2527, 'destineemarian@gmail.com', 05);
+
+INSERT INTO artist VALUES(001, 'Luke Chiang', 9622, 'LChiang@gmail.com', 09); 
+INSERT INTO artist VALUES(002, 'Clario', 7999, 'Clario@gmail.com', 01); 
+INSERT INTO artist VALUES(003, 'FALLING IN REVERSE', 4966, 'FALLINGINREVERSE@gmail.com', 02);
+INSERT INTO artist VALUES(004, 'Keshi', 8395, 'Keshi@gmail.com', 03); 
+INSERT INTO artist VALUES(005, 'Khalid', 9241, 'Khalid@gmail.com', 01); 
+INSERT INTO artist VALUES(006, 'The Weeknd', 8395, 'theWeeknd@gmail.com', 01); 
+INSERT INTO artist VALUES(007, 'Joji', 8395, 'Joji@gmail.com', 01); 
+INSERT INTO artist VALUES(008, 'LANY', 2942, 'LANY@gmail.com', 04); 
+INSERT INTO artist VALUES(009, 'Coldplay', 0482, 'Coldplay@gmail.com', 04); 
+INSERT INTO artist VALUES(010, 'K-391', 4903, 'K391@gmail.com', 08); 
+INSERT INTO artist VALUES(011, 'Notorious B.I.G.', 8395, 'NotoriousB.I.G.@gmail.com', 07); 
+INSERT INTO artist VALUES(012, 'Brent Faiyaz', 0284, 'Brent Faiyaz@gmail.com', 06); 
+INSERT INTO artist VALUES(013, 'Durand Jones and the Indications', 0284, 'DurandJones@gmail.com', 05);
+INSERT INTO artist VALUES(014, 'Sleeping at Last', 7832, 'SleepingAtLast@gmail.com', 06); 
+INSERT INTO artist VALUES(015, 'Amaarae', 2983, 'Amaarae@gmail.com', 09); 
 
 INSERT INTO music VALUES ('May I Ask', 'May I Ask', 'Luke Chiang', '3:51');
 INSERT INTO music VALUES ('4EVER', '4EVER', 'Clario', '2:40');
