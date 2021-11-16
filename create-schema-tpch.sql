@@ -64,6 +64,7 @@ DELETE FROM artist;
 DELETE FROM music;
 DELETE FROM playlist;
 DELETE FROM sharing;
+DELETE FROM userProfile;
 
 INSERT INTO region VALUES(01, 'AMERICA'); 
 INSERT INTO region VALUES(02, 'ASIA'); 
@@ -160,6 +161,23 @@ INSERT INTO sharing VALUES(09, 'Indie/Alternative', 'The Scientist', 'A Rush of 
 INSERT INTO sharing VALUES(09, 'Indie/Alternative',  'A Head Full of Dreams',  'A Head Full of Dreams'); 
 INSERT INTO sharing VALUES(10, 'Music', 'Falling Down', 'Falling Down'); 
 INSERT INTO sharing VALUES(10, 'Music', 'Rain.strm', 'Rain.strm');
+
+INSERT INTO userProfile VALUES(31, 001, 01); 
+INSERT INTO userProfile VALUES(82, 002, 01); 
+INSERT INTO userProfile VALUES(94, 003, 01); 
+INSERT INTO userProfile VALUES(43, 004, 02); 
+INSERT INTO userProfile VALUES(95, 005, 02); 
+INSERT INTO userProfile VALUES(02, 006, 02); 
+INSERT INTO userProfile VALUES(84, 007, 04); 
+INSERT INTO userProfile VALUES(29, 008, 04); 
+INSERT INTO userProfile VALUES(59, 009, 04); 
+INSERT INTO userProfile VALUES(74, 010, 03); 
+INSERT INTO userProfile VALUES(93, 011, 03); 
+INSERT INTO userProfile VALUES(64, 012, 02); 
+INSERT INTO userProfile VALUES(83, 013, 01); 
+INSERT INTO userProfile VALUES(62, 014, 01); 
+INSERT INTO userProfile VALUES(72, 015, 02); 
+INSERT INTO userProfile VALUES(90, 016, 01); 
 
 ;
 .headers off
