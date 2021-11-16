@@ -46,6 +46,28 @@ VALUES
 ('Crash My Car', 'Dreamland', 'COIN', '3:08'),
 ('Save Your Tears', 'After Hours', 'The Weeknd', '3:36');
 
+-- 6
+UPDATE artist 
+SET a_email = 'BFaiyaz@gmail.com', a_passcode = 9043
+WHERE a_artistkey = 012
+
+-- 7 
+DELETE FROM music 
+WHERE m_songName = 'Turning Page' 
+
+-- 8 
+UPDATE playlist 
+SET p_songName = 'May I Ask, Easy', p_artistName = 'Luke Chiang, Mac Ayres'
+WHERE p_playlistName= 'Goodsong' 
+
+-- 9
+DELETE from user
+WHERE u_nationkey BETWEEN 02 AND 05;
+
+-- 10 
+UPDATE sharing 
+SET s_playlistName = 'rainydays' 
+WHERE s_profileKey = 10
 
 
 
