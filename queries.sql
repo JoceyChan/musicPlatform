@@ -130,7 +130,7 @@ ON p_artistName = m_artistName
 GROUP BY p_artistName
 HAVING COUNT(m_artistName) > 3);
 
--- 16 
+-- 16 (complex)
 DELETE FROM artist 
 WHERE a_nationkey = 4 OR a_artistName IN
 (SELECT a_artistName 
