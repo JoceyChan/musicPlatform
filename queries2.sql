@@ -69,15 +69,7 @@ where upr_profileKey = 72);
 
 --10
 DELETE from artist 
-where a_nationkey = 4  or 
-a_artistName in (
-SELECT a_artistName
-from artist 
-inner join playlist
-on a_artistName = p_artistName 
-inner join sharing 
-on p_playlistName = s_playlistName
-WHERE s_playlistName = 'vibin');
+where a_nationkey = 4);
 
 
 
