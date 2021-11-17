@@ -129,3 +129,15 @@ INNER JOIN playlist
 ON p_artistName = m_artistName
 GROUP BY p_artistName
 HAVING COUNT(m_artistName) > 3);
+
+-- 16 
+DELETE from artist 
+where a_nationkey = 4  or 
+a_artistName in (
+SELECT a_artistName
+from artist 
+inner join playlist
+on a_artistName = p_artistName 
+inner join sharing 
+on p_playlistName = s_playlistName
+WHERE s_playlistName = 'vibin');
