@@ -74,7 +74,7 @@ UPDATE music
 SET m_albumName = ' '
 WHERE m_albumName = m_songName;
 
--- 12
+-- 12 (complex)
 DELETE FROM music 
 WHERE m_duration >= '5:00' OR 
 m_artistName IN 
@@ -113,7 +113,7 @@ INNER JOIN sharing
 ON s_playlistName = p_playlistName
 WHERE s_profileKey < 2);
 
--- 15
+-- 15 (complex)
 DELETE FROM playlist 
 WHERE length(p_songName) >= 16 OR p_artistName IN 
 (SELECT p_artistName 
