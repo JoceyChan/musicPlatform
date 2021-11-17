@@ -71,12 +71,28 @@ where upr_profileKey = 72);
 DELETE from artist 
 where a_nationkey = 4);
 
---17 
+-- 17 
 ALTER TABLE artistProfile
-ADD apr_followers decimal(3, 0) not null; 
+ADD apr_followers decimal(3, 0); 
 
---18 
-UPDATE sharing 
+-- 18 
+UPDATE artistProfile
+SET apr_followers = 4000 
+WHERE apr_artistKey > 10 
+
+-- 19 
+ALTER TABLE userProfile
+ADD upr_followers decimal(3, 0); 
+
+-- 20 
+UPDATE sharing
+set s_profileKey = 
+where a_artistName = 'Lorde'
+
+
+
+
+
 
 
 
