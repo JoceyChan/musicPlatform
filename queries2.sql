@@ -79,7 +79,12 @@ inner join sharing
 on p_playlistName = s_playlistName
 WHERE s_playlistName = 'vibin');
 
+--17 
+ALTER TABLE artistProfile
+ADD apr_followers decimal(3, 0) not null; 
 
+--18 
+UPDATE sharing 
 
 
 
