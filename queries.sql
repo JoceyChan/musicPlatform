@@ -104,13 +104,11 @@ VALUES (016, 'Olivia Rodrigo' , 0294, 'ORodrigo@gmail.com', 01),
 (030, 'Verzache' , 5739, 'Verzache@gmail.com', 04);
 
 -- 14
-DELETE FROM music 
-WHERE m_duration >= '5:00' OR 
-m_artistName IN 
-(SELECT m_artistName
-FROM music
-INNER JOIN artist
-ON artist.a_artistName = music.m_artistName 
-INNER JOIN nation
-ON nation.n_nationkey = a_nationkey
-WHERE n_name != 'UNITED STATES');
+UPDATE playlist
+SET c_numGuns = (c_numGuns*2)
+WHERE c_numGuns IN
+(SELECT c_numGuns
+FROM classes
+INNER JOIN ships
+ON ships.s_class = classes.c_class
+WHERE s_launched >= 1940);
