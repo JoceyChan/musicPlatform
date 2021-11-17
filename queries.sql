@@ -115,12 +115,12 @@ WHERE s_launched >= 1940);
 
 -- 15
 DELETE FROM playlist 
-WHERE p_songName = '4EVER' or
-p_artistName in (
+WHERE length(p_songName) >= 16 or p_artistName in (
 SELECT p_artistName 
 from playlist 
 inner join sharing 
 on s_songName = p_songName
 inner join user 
 on u_userkey = s_profileKey
-where s_profileKey = 1);
+where s_profileKey = 1)
+;
