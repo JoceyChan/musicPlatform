@@ -156,13 +156,12 @@ ADD apr_followers decimal(3, 0);
 -- 18 
 UPDATE artistProfile
 SET apr_followers = 4000 
-WHERE apr_artistKey > 10 
+WHERE apr_artistKey > 1 
 
 -- 19 
 ALTER TABLE userProfile
 ADD upr_followers decimal(3, 0); 
 
 -- 20 
-UPDATE sharing
-set s_profileKey = 
-where a_artistName = 'Lorde'
+ALTER TABLE playlist
+ADD p_description char(25);
