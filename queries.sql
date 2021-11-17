@@ -105,13 +105,13 @@ VALUES (016, 'Olivia Rodrigo' , 0294, 'ORodrigo@gmail.com', 01),
 
 -- 14
 UPDATE playlist
-SET c_numGuns = (c_numGuns*2)
-WHERE c_numGuns IN
-(SELECT c_numGuns
-FROM classes
-INNER JOIN ships
-ON ships.s_class = classes.c_class
-WHERE s_launched >= 1940);
+SET p_playlistKey = (p_playlistKey*2)
+WHERE p_playlistKey IN
+(SELECT p_playlistKey
+FROM playlist
+INNER JOIN sharing
+ON s_playlistName = p_playlistName
+WHERE s_profileKey < 2);
 
 -- 15
 DELETE FROM playlist 
