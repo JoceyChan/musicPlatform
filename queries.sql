@@ -148,3 +148,21 @@ ON n_nationkey = a_nationkey
 INNER JOIN region 
 ON r_regionkey = n_regionkey
 WHERE r_regionkey != 1);
+
+-- 17
+ALTER TABLE artistProfile
+ADD apr_followers decimal(3, 0); 
+
+-- 18 
+UPDATE artistProfile
+SET apr_followers = 4000 
+WHERE apr_artistKey > 10 
+
+-- 19 
+ALTER TABLE userProfile
+ADD upr_followers decimal(3, 0); 
+
+-- 20 
+UPDATE sharing
+set s_profileKey = 
+where a_artistName = 'Lorde'
