@@ -115,12 +115,17 @@ WHERE s_launched >= 1940);
 
 -- 15
 DELETE FROM playlist 
-WHERE length(p_songName) >= 16 or p_artistName in (
-SELECT p_artistName 
-from playlist 
-inner join sharing 
-on s_songName = p_songName
-inner join user 
-on u_userkey = s_profileKey
-where s_profileKey = 1)
-;
+WHERE length(p_songName) >= 16 OR p_artistName IN 
+(SELECT p_artistName 
+FROM playlist 
+INNER JOIN sharing 
+ON s_songName = p_songName
+JOIN user 
+ON u_userkey = s_profileKey
+WHERE s_profileKey = 1) OR p_artistName IN 
+(SELECT m_artistName
+FROM music
+INNER JOIN playlist
+ON p_artistName = m_artistName
+GROUP BY p_artistName
+HAVING COUNT(m_artistName) > 3);
