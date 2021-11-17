@@ -71,7 +71,12 @@ where upr_profileKey = 72);
 DELETE from artist 
 where a_nationkey = 4);
 
+--17 
+ALTER TABLE artistProfile
+ADD apr_followers decimal(3, 0) not null; 
 
+--18 
+UPDATE sharing 
 
 
 
