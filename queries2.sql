@@ -46,6 +46,18 @@ VALUES (016, 'Olivia Rodrigo' , 0294, 'ORodrigo@gmail.com', 01),
 (030, 'Verzache' , 5739, 'Verzache@gmail.com', 04);
 
 --8 
+DELETE FROM playlist 
+WHERE p_songName = '4EVER' or
+p_artistName in (
+SELECT p_artistName 
+from playlist 
+inner join sharing 
+on s_songName = p_songName
+inner join user 
+on u_userkey = s_profileKey
+where s_profileKey = 1);
+
+
 
 
 
