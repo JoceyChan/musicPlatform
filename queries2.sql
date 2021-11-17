@@ -57,6 +57,33 @@ inner join user
 on u_userkey = s_profileKey
 where s_profileKey = 1);
 
+--9 
+DELETE from user 
+where u_passcode < 5000 or 
+u_userkey in (
+SELECT u_userkey 
+from user 
+inner join userProfile
+on u_userkey = upr_userKey 
+where upr_profileKey = 72);
+
+--10
+DELETE from artist 
+where a_nationkey = 4  or 
+a_artistName in (
+SELECT a_artistName
+from artist 
+inner join playlist
+on a_artistName = p_artistName 
+inner join sharing 
+on p_playlistName = s_playlistName
+WHERE s_playlistName = 'vibin');
+
+
+
+
+
+
 
 
 
