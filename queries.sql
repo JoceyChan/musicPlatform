@@ -130,14 +130,21 @@ ON p_artistName = m_artistName
 GROUP BY p_artistName
 HAVING COUNT(m_artistName) > 3);
 
--- 16 
-DELETE from artist 
-where a_nationkey = 4  or 
-a_artistName in (
-SELECT a_artistName
-from artist 
-inner join playlist
-on a_artistName = p_artistName 
-inner join sharing 
-on p_playlistName = s_playlistName
-WHERE s_playlistName = 'vibin');
+-- 16 (complex)
+DELETE FROM artist 
+WHERE a_nationkey = 4 OR a_artistName IN
+(SELECT a_artistName 
+FROM artist
+INNER JOIN playlist
+ON p_artistName = a_artistName
+INNER JOIN music
+ON m_artistName = a_artistName
+Group BY m_artistName
+HAVING COUNT(m_artistName) > 2) or a_nationkey IN
+(SELECT a_nationkey 
+FROM artist
+INNER JOIN nation
+ON n_nationkey = a_nationkey
+INNER JOIN region 
+ON r_regionkey = n_regionkey
+WHERE r_regionkey != 1);
