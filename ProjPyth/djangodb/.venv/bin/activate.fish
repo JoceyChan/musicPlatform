@@ -29,7 +29,11 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/Users/christinepham/musicPlatform/ProjPyth/djangodb/.venv"
+=======
+set -gx VIRTUAL_ENV "/Users/joceychan/musicPlatform/ProjPyth/djangodb/.venv"
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -59,7 +63,11 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
             set -l _checkbase (basename "$VIRTUAL_ENV")
             if test $_checkbase = "__"
                 # special case for Aspen magic directories
+<<<<<<< HEAD
                 # see http://www.zetadev.com/software/aspen/
+=======
+                # see https://aspen.io/
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
                 printf "%s[%s]%s " (set_color -b blue white) (basename (dirname "$VIRTUAL_ENV")) (set_color normal)
             else
                 printf "%s(%s)%s" (set_color -b blue white) (basename "$VIRTUAL_ENV") (set_color normal)
