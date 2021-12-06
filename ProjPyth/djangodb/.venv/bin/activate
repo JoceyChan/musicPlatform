@@ -28,7 +28,11 @@ deactivate () {
     fi
 
     unset VIRTUAL_ENV
+<<<<<<< HEAD
+    if [ ! "$1" = "nondestructive" ] ; then
+=======
     if [ ! "${1:-}" = "nondestructive" ] ; then
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
     # Self destruct!
         unset -f deactivate
     fi
@@ -37,7 +41,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
+VIRTUAL_ENV="/Users/christinepham/musicPlatform/ProjPyth/djangodb/.venv"
+=======
 VIRTUAL_ENV="/Users/joceychan/musicPlatform/ProjPyth/djangodb/.venv"
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -59,7 +67,11 @@ if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     else
     if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
         # special case for Aspen magic directories
+<<<<<<< HEAD
+        # see http://www.zetadev.com/software/aspen/
+=======
         # see https://aspen.io/
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
         PS1="[`basename \`dirname \"$VIRTUAL_ENV\"\``] $PS1"
     else
         PS1="(`basename \"$VIRTUAL_ENV\"`)$PS1"

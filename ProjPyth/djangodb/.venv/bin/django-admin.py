@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#!/Users/christinepham/musicPlatform/ProjPyth/djangodb/.venv/bin/python3
+=======
 #!/Users/joceychan/musicPlatform/ProjPyth/djangodb/.venv/bin/python3
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

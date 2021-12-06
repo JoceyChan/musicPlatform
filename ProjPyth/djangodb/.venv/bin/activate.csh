@@ -8,7 +8,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
+setenv VIRTUAL_ENV "/Users/christinepham/musicPlatform/ProjPyth/djangodb/.venv"
+=======
 setenv VIRTUAL_ENV "/Users/joceychan/musicPlatform/ProjPyth/djangodb/.venv"
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
@@ -22,7 +26,11 @@ if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
     else
         if (`basename "VIRTUAL_ENV"` == "__") then
             # special case for Aspen magic directories
+<<<<<<< HEAD
+            # see http://www.zetadev.com/software/aspen/
+=======
             # see https://aspen.io/
+>>>>>>> b4c416d5341284d1538c5b9a172f086ac2ddbec9
             set env_name = `basename \`dirname "$VIRTUAL_ENV"\``
         else
             set env_name = `basename "$VIRTUAL_ENV"`
