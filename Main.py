@@ -15,3 +15,15 @@ def openConnection(_dbFile):
     print("++++++++++++++++++++++++++++++++++")
 
     return conn
+
+def closeConnection(_conn, _dbFile):
+    print("++++++++++++++++++++++++++++++++++")
+    print("Close database: ", _dbFile)
+
+    try:
+        _conn.close()
+        print("success")
+    except Error as e:
+        print(e)
+
+    print("++++++++++++++++++++++++++++++++++")
