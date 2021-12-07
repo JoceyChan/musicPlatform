@@ -28,7 +28,8 @@ CREATE TABLE music (
     m_songName char(25) not null,
     m_albumName char(25) not null,
     m_artistName char(25) not null,
-    m_duration char(25) not null
+    m_duration char(25) not null,
+    m_key decimal(3,0) not null
 );
 CREATE TABLE playlist (
     p_playlistName char(25) not null,
@@ -117,21 +118,21 @@ INSERT INTO artist VALUES(013, 'Durand Jones and the Indications', 0284, 'Durand
 INSERT INTO artist VALUES(014, 'Sleeping at Last', 7832, 'SleepingAtLast@gmail.com', 06); 
 INSERT INTO artist VALUES(015, 'Amaarae', 2983, 'Amaarae@gmail.com', 09); 
 
-INSERT INTO music VALUES ('May I Ask', 'May I Ask', 'Luke Chiang', '3:51');
-INSERT INTO music VALUES ('4EVER', '4EVER', 'Clario', '2:40');
-INSERT INTO music VALUES ('POPULAR MONSTER', 'POPULAR MONSTER', 'FALLING IN REVERSE', '3:41');
-INSERT INTO music VALUES('Beside You','Beside You', 'Keshi', '2:41');
-INSERT INTO music VALUES('Saved', 'American Teen', 'Kalid', '3:26');
-INSERT INTO music VALUES('Die for You', 'Starboy', 'The Weeknd', '4:20');
-INSERT INTO music VALUES('Sanctuary', 'Nectar', 'Joji', '3:00');
-INSERT INTO music VALUES ('Malibu Nights', 'Malibu Nights', 'LANY', '4:47');
-INSERT INTO music VALUES ('Yellow', 'Parachutes', 'Coldplay', '4:27');
-INSERT INTO music VALUES('Aurora', 'Aurora', 'K-391 & RØRY', '2:44');
-INSERT INTO music VALUES('Big Poppa', 'Greatest hits', 'Notorious B.I.G.', '4:10');
-INSERT INTO music VALUES('Gang Over Luv', 'Sonder Son', 'Brent Faiyaz', '3:24');
-INSERT INTO music VALUES('True Love', 'American Love Call', 'Durand Jones and the Indications', '3:42');
-INSERT INTO music VALUES('Turning Page', 'Turning Page', 'Sleeping at Last', '4:16');
-INSERT INTO music VALUES('SAD GIRLZ LUV MONEY remix', 'SAD GIRLZ LUV MONEY remix', 'Amaarae ft. Kali Uchis', '3:25'); 
+INSERT INTO music VALUES ('May I Ask', 'May I Ask', 'Luke Chiang', '3:51', 01);
+INSERT INTO music VALUES ('4EVER', '4EVER', 'Clario', '2:40', 02);
+INSERT INTO music VALUES ('POPULAR MONSTER', 'POPULAR MONSTER', 'FALLING IN REVERSE', '3:41', 03);
+INSERT INTO music VALUES('Beside You','Beside You', 'Keshi', '2:41', 04);
+INSERT INTO music VALUES('Saved', 'American Teen', 'Kalid', '3:26', 05);
+INSERT INTO music VALUES('Die for You', 'Starboy', 'The Weeknd', '4:20', 06);
+INSERT INTO music VALUES('Sanctuary', 'Nectar', 'Joji', '3:00', 07);
+INSERT INTO music VALUES ('Malibu Nights', 'Malibu Nights', 'LANY', '4:47', 08);
+INSERT INTO music VALUES ('Yellow', 'Parachutes', 'Coldplay', '4:27', 09);
+INSERT INTO music VALUES('Aurora', 'Aurora', 'K-391 & RØRY', '2:44', 10);
+INSERT INTO music VALUES('Big Poppa', 'Greatest hits', 'Notorious B.I.G.', '4:10', 11);
+INSERT INTO music VALUES('Gang Over Luv', 'Sonder Son', 'Brent Faiyaz', '3:24', 12);
+INSERT INTO music VALUES('True Love', 'American Love Call', 'Durand Jones and the Indications', '3:42', 13);
+INSERT INTO music VALUES('Turning Page', 'Turning Page', 'Sleeping at Last', '4:16', 14);
+INSERT INTO music VALUES('SAD GIRLZ LUV MONEY remix', 'SAD GIRLZ LUV MONEY remix', 'Amaarae ft. Kali Uchis', '3:25', 15); 
 
 INSERT INTO playlist VALUES('Goodsong', 001, 'May I Ask', 'Luke Chiang', 001); 
 INSERT INTO playlist VALUES('Goodsong', 001, 'Easy', 'Mac Ayres', 001); 
