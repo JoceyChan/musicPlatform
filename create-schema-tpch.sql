@@ -108,7 +108,7 @@ INSERT INTO user VALUES(020, 'ryanowlred', 9024, 'ryanowlred@gmail.com', 04);
 INSERT INTO user VALUES(021, 'kathyammil', 8361, 'kathyammil@gmail.com', 01);
 INSERT INTO user VALUES(021, 'ericmillet', 3947, 'ericmillet@gmail.com', 03);
 INSERT INTO user VALUES(022, 'kylederecho', 4103, 'kylederecho@gmail.com', 02);
-INSERT INTO user VALUES(023, 
+INSERT INTO user VALUES(023, 'ashley32', 0983, 'ashley32@gmail.com', 03);
 
 
 INSERT INTO artist VALUES(001, 'Luke Chiang', 9622, 'LChiang@gmail.com', 09); 
