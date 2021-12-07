@@ -34,7 +34,8 @@ CREATE TABLE playlist (
     p_playlistName char(25) not null,
     p_playlistKey decimal(3, 0) not null, 
     p_songName char(25) not null, 
-    p_artistName char(25) not null
+    p_artistName char(25) not null,
+    p_userKey decimal(3, 0) not null
 );
 CREATE TABLE sharing(
     s_profileKey decimal (3,0) not null, 
@@ -52,6 +53,7 @@ CREATE TABLE userProfile(
     upr_userKey decimal (3,0) not null, 
     upr_nationkey decimal (3,0) not null
 );
+DROP TABLE playlist;
 ;
 .headers off
 
@@ -131,16 +133,26 @@ INSERT INTO music VALUES('True Love', 'American Love Call', 'Durand Jones and th
 INSERT INTO music VALUES('Turning Page', 'Turning Page', 'Sleeping at Last', '4:16');
 INSERT INTO music VALUES('SAD GIRLZ LUV MONEY remix', 'SAD GIRLZ LUV MONEY remix', 'Amaarae ft. Kali Uchis', '3:25'); 
 
-INSERT INTO playlist VALUES('Goodsong', 001, 'May I Ask Easy', 'Luke Chiang Mac Ayres'); 
-INSERT INTO playlist VALUES('Bedroom pop', 002, '4EVER Little by Little', 'Clario The Marias');
-INSERT INTO playlist VALUES('K-popcorn', 003, 'Mic Drop Pop/stars', 'BTS k/da');
-INSERT INTO playlist VALUES('SomusomU', 004, 'Blue Hour Kazino', 'TXT BIBI');
-INSERT INTO playlist VALUES('Car Ride', 005, 'Saved Shot Down', 'Khalid'); 
-INSERT INTO playlist VALUES('Issa bop', 006, 'Die for you Boy', 'The Weeknd Charlie Puth');
-INSERT INTO playlist VALUES('Singable', 007, 'Sanctuary Sacramental', 'Joji Kiba of Akiba');
-INSERT INTO playlist VALUES('vibin', 008, 'ILYSB Thick and Thin', 'LANY');
-INSERT INTO playlist VALUES('Indie/Alternative', 009, 'The Scientist A Head Full of Dreams', 'Coldplay');
-INSERT INTO playlist VALUES('Music', 010, 'Falling Down Rain.strm', 'Shiloh altitude');
+INSERT INTO playlist VALUES('Goodsong', 001, 'May I Ask', 'Luke Chiang', 001); 
+INSERT INTO playlist VALUES('Goodsong', 001, 'Easy', 'Mac Ayres', 001); 
+INSERT INTO playlist VALUES('Bedroom pop', 002, '4EVER', 'Clario', 002);
+INSERT INTO playlist VALUES('Bedroom pop', 002, 'Little by Little', 'Clario', 002);
+INSERT INTO playlist VALUES('K-popcorn', 003, 'Mic Drop', 'BTS', 003);
+INSERT INTO playlist VALUES('K-popcorn', 003, 'Pop/stars', 'k/da', 003);
+INSERT INTO playlist VALUES('SomusomU', 004, 'Blue Hour', 'TXT', 004);
+INSERT INTO playlist VALUES('SomusomU', 004, 'Kazino', 'BIBI', 004);
+INSERT INTO playlist VALUES('Car Ride', 005, 'Saved', 'Khalid', 005); 
+INSERT INTO playlist VALUES('Car Ride', 005, 'Shot Down', 'Khalid', 005); 
+INSERT INTO playlist VALUES('Issa bop', 006, 'Die for you', 'The Weeknd', 006);
+INSERT INTO playlist VALUES('Issa bop', 006, 'Boy', 'Charlie Puth', 006);
+INSERT INTO playlist VALUES('Singable', 007, 'Sanctuary', 'Joji', 007);
+INSERT INTO playlist VALUES('Singable', 007, 'Sacramental', 'Kiba of Akiba', 007);
+
+
+INSERT INTO playlist VALUES('Singable', 007, 'Sanctuary Sacramental', 'Joji Kiba of Akiba', 007);
+INSERT INTO playlist VALUES('vibin', 008, 'ILYSB Thick and Thin', 'LANY', 008);
+INSERT INTO playlist VALUES('Indie/Alternative', 009, 'The Scientist A Head Full of Dreams', 'Coldplay', 009);
+INSERT INTO playlist VALUES('Music', 010, 'Falling Down Rain.strm', 'Shiloh altitude', 010);
 
 INSERT INTO sharing VALUES(01, 'Goodsong', 'May I Ask', 'May I ask'); 
 INSERT INTO sharing VALUES(01, 'Goodsong', 'Easy', 'Drive Slow');
