@@ -101,6 +101,15 @@ INSERT INTO user VALUES(013, '_sarahtonin_._', 6633, 'sarahacuna12@gmail.com', 0
 INSERT INTO user VALUES(014, 'Carmen_bee22' , 7364, 'cbribiesca22@gmail.com', 06);
 INSERT INTO user VALUES(015, 'Mynamesjustice_', 3578, 'jdhogan0@gmail.com', 07);
 INSERT INTO user VALUES(016, 'destineemarian', 2527, 'destineemarian@gmail.com', 05);
+INSERT INTO user VALUES(017, 'amythething', 3831, 'amythething@gmail.com', 08);
+INSERT INTO user VALUES(018, 'maryarchery', 0975, 'maryarchery@gmail.com', 07);
+INSERT INTO user VALUES(019, 'bobkyanite', 1203, 'bobkyanite@gmail.com', 06);
+INSERT INTO user VALUES(020, 'ryanowlred', 9024, 'ryanowlred@gmail.com', 04);
+INSERT INTO user VALUES(021, 'kathyammil', 8361, 'kathyammil@gmail.com', 01);
+INSERT INTO user VALUES(021, 'ericmillet', 3947, 'ericmillet@gmail.com', 03);
+INSERT INTO user VALUES(022, 'kylederecho', 4103, 'kylederecho@gmail.com', 02);
+INSERT INTO user VALUES(023, 
+
 
 INSERT INTO artist VALUES(001, 'Luke Chiang', 9622, 'LChiang@gmail.com', 09); 
 INSERT INTO artist VALUES(002, 'Clario', 7999, 'Clario@gmail.com', 01); 
