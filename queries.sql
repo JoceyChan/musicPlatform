@@ -57,7 +57,7 @@ WHERE m_songName = 'Turning Page';
 
 -- 8 
 UPDATE playlist 
-SET p_songName = 'May I Ask, Easy', p_artistName = 'Luke Chiang, Mac Ayres'
+SET p_songName = 'May I Ask', p_artistName = 'Luke Chiang'
 WHERE p_playlistName= 'Goodsong'; 
 
 -- 9
