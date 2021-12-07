@@ -147,12 +147,13 @@ INSERT INTO playlist VALUES('Issa bop', 006, 'Die for you', 'The Weeknd', 006);
 INSERT INTO playlist VALUES('Issa bop', 006, 'Boy', 'Charlie Puth', 006);
 INSERT INTO playlist VALUES('Singable', 007, 'Sanctuary', 'Joji', 007);
 INSERT INTO playlist VALUES('Singable', 007, 'Sacramental', 'Kiba of Akiba', 007);
+INSERT INTO playlist VALUES('vibin', 008, 'ILYSB', 'LANY', 008);
+INSERT INTO playlist VALUES('vibin', 008, 'Thick and Thin', 'LANY', 008);
+INSERT INTO playlist VALUES('Indie/Alternative', 009, 'The Scientist', 'Coldplay', 009);
+INSERT INTO playlist VALUES('Indie/Alternative', 009, 'A Head Full of Dreams', 'Coldplay', 009);
+INSERT INTO playlist VALUES('Music', 010, 'Falling Down', 'Shiloh altitude', 010);
+INSERT INTO playlist VALUES('Music', 010, 'Rain.strm', 'Shiloh altitude', 010);
 
-
-INSERT INTO playlist VALUES('Singable', 007, 'Sanctuary Sacramental', 'Joji Kiba of Akiba', 007);
-INSERT INTO playlist VALUES('vibin', 008, 'ILYSB Thick and Thin', 'LANY', 008);
-INSERT INTO playlist VALUES('Indie/Alternative', 009, 'The Scientist A Head Full of Dreams', 'Coldplay', 009);
-INSERT INTO playlist VALUES('Music', 010, 'Falling Down Rain.strm', 'Shiloh altitude', 010);
 
 INSERT INTO sharing VALUES(01, 'Goodsong', 'May I Ask', 'May I ask'); 
 INSERT INTO sharing VALUES(01, 'Goodsong', 'Easy', 'Drive Slow');
